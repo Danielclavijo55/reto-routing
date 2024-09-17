@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -37,7 +37,9 @@ export default function Detail() {
               padding: '0.6rem',  
               minHeight: '40px'   
             }}>
-              Adóptame
+              <Link to="/" style={{ color: '#fff', textDecoration: 'none' }}>
+                Adóptame
+              </Link>
             </Card.Header>
             <Card.Body>
               <Card.Title style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{mascota.nombre}</Card.Title>
